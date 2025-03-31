@@ -1,7 +1,14 @@
+GIT
+  remote: https://github.com/beda-software/inferno_ps_suite_generator
+  revision: ddd44bf7557d42f282b84b745a702ad3e5114c9a
+  ref: ddd44bf7557d42f282b84b745a702ad3e5114c9a
+  specs:
+    inferno_ps_suite_generator (0.1.0)
+
 PATH
   remote: .
   specs:
-    inferno_template (0.0.0)
+    ips_inferno (0.0.0)
       inferno_core (~> 0.6.2)
 
 GEM
@@ -22,7 +29,7 @@ GEM
       i18n
     bigdecimal (3.1.9)
     blueprinter (0.25.2)
-    byebug (11.1.3)
+    byebug (12.0.0)
     coderay (1.1.3)
     concurrent-ruby (1.3.4)
     connection_pool (2.5.0)
@@ -135,7 +142,7 @@ GEM
       domain_name (~> 0.5)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
-    inferno_core (0.6.2)
+    inferno_core (0.6.8)
       activesupport (~> 6.1.7.5)
       base62-rb (= 0.3.1)
       blueprinter (= 0.25.2)
@@ -174,12 +181,12 @@ GEM
     kramdown (2.5.1)
       rexml (>= 3.3.9)
     language_server-protocol (3.17.0.4)
-    logger (1.6.5)
+    logger (1.7.0)
     method_source (1.1.0)
-    mime-types (3.6.0)
+    mime-types (3.6.2)
       logger
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2025.0204)
+    mime-types-data (3.2025.0325)
     minitest (5.25.4)
     multi_json (1.15.0)
     multi_xml (0.7.1)
@@ -192,21 +199,21 @@ GEM
       mustermann (= 1.1.2)
     netrc (0.11.0)
     nio4r (2.7.4)
-    nokogiri (1.18.2-aarch64-linux-gnu)
+    nokogiri (1.18.6-aarch64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-aarch64-linux-musl)
+    nokogiri (1.18.6-aarch64-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm-linux-gnu)
+    nokogiri (1.18.6-arm-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm-linux-musl)
+    nokogiri (1.18.6-arm-linux-musl)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm64-darwin)
+    nokogiri (1.18.6-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-darwin)
+    nokogiri (1.18.6-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-gnu)
+    nokogiri (1.18.6-x86_64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-musl)
+    nokogiri (1.18.6-x86_64-linux-musl)
       racc (~> 1.4)
     oauth2 (1.4.11)
       faraday (>= 0.17.3, < 3.0)
@@ -224,12 +231,12 @@ GEM
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
-    pry (0.14.2)
+    pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-byebug (3.10.1)
-      byebug (~> 11.0)
-      pry (>= 0.13, < 0.15)
+    pry-byebug (3.11.0)
+      byebug (~> 12.0)
+      pry (>= 0.13, < 0.16)
     psych (5.2.3)
       date
       stringio
@@ -244,7 +251,7 @@ GEM
     rake (13.2.1)
     rdoc (6.12.0)
       psych (>= 4.0.0)
-    redis-client (0.23.2)
+    redis-client (0.24.0)
       connection_pool
     regexp_parser (2.10.0)
     reline (0.6.0)
@@ -346,7 +353,8 @@ DEPENDENCIES
   database_cleaner-sequel (~> 1.8)
   debug
   factory_bot (~> 6.1)
-  inferno_template!
+  inferno_ps_suite_generator!
+  ips_inferno!
   rack-test
   rspec (~> 3.10)
   rubocop (~> 1.9)

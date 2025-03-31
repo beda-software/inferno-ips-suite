@@ -1,7 +1,7 @@
-require_relative 'lib/ips/version'
+require_relative 'lib/inferno_ips/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ips_suite'
+  spec.name          = 'ips_inferno'
   spec.version       = InfernoIPS::VERSION
   spec.authors       = ['Inferno IPS']
   # spec.email         = ['TODO']

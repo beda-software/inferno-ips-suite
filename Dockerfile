@@ -6,8 +6,7 @@ RUN mkdir -p $INSTALL_PATH
 
 WORKDIR $INSTALL_PATH
 
-ADD lib/inferno_template/metadata.rb $INSTALL_PATH/lib/inferno_template/metadata.rb
-ADD lib/inferno_template/version.rb $INSTALL_PATH/lib/inferno_template/version.rb
+ADD lib/inferno_ips/version.rb $INSTALL_PATH/lib/inferno_ips/version.rb
 ADD *.gemspec $INSTALL_PATH
 ADD Gemfile* $INSTALL_PATH
 RUN gem install bundler

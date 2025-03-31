@@ -1,11 +1,11 @@
-require_relative 'lib/inferno_template/version'
+require_relative 'lib/ips/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'inferno_template'
-  spec.version       = InfernoTemplate::VERSION
-  spec.authors       = ['Inferno Template']
+  spec.name          = 'ips_suite'
+  spec.version       = InfernoIPS::VERSION
+  spec.authors       = ['Inferno IPS']
   # spec.email         = ['TODO']
-  spec.summary       = 'Inferno Template'
+  spec.summary       = 'Inferno IPS'
   # spec.description   = <<~DESCRIPTION
   #   This is a big markdown description of the test kit.
   # DESCRIPTION

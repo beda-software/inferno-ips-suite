@@ -34,11 +34,11 @@ rubocop:
 	$(compose) $(inferno) rubocop
 
 generate:
-	sudo rm -rf lib/ips_inferno/generated/
+	sudo rm -rf lib/inferno_ips/generated/
 	$(compose) $(inferno) bundle exec rake ips:generate
 	$(compose) $(inferno) rubocop -A
 
 generate_local:
-	sudo rm -rf lib/ips_inferno/generated/
+	sudo rm -rf lib/inferno_ips/generated/
 	bundle exec rake ips:generate
 	rubocop -A .

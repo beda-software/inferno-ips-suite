@@ -22,6 +22,7 @@ namespace :ips do
     InfernoPsSuiteGenerator::Generator.generate(
       {
         title: 'IPS Inferno',
+        ig_human_name: 'IPS',
         ig_identifier: 'hl7.fhir.au.ps',
         gem_name: 'inferno_ips',
         core_file_path: './lib/inferno_ips.rb',

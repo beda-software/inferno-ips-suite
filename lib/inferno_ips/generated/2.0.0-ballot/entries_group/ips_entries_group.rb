@@ -61,7 +61,7 @@ require_relative 'documentreference_entry_test'
 module IPSTestKit
   class EntriesGroup < Inferno::TestGroup
     title '$summary Entries Tests'
-    description 'A set of tests to check entries from $summary for read action and validate them according to profile specified in the AU PS Implementation Guide'
+    description 'A set of tests to check entries from $summary for read action and validate them according to profile specified in the IPS Implementation Guide'
     id :ips_entries
     run_as_group
 

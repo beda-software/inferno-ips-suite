@@ -20,4 +20,4 @@ group :test do
 end
 
 gem 'inferno_ps_suite_generator', git: 'https://github.com/beda-software/inferno_ps_suite_generator',
-                                  ref: 'ddd44bf7557d42f282b84b745a702ad3e5114c9a'
+                                  ref: '38cd57e7c42131cec996fd424000308f788abc7e'

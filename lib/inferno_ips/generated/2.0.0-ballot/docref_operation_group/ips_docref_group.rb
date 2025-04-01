@@ -7,7 +7,7 @@ require_relative 'docref_operation_success'
 module IPSTestKit
   class DocRefOperation < Inferno::TestGroup
     title '$docref Operation Tests'
-    description 'Verify support for the $docref operation as as described in the AU PS Guidance'
+    description 'Verify support for the $docref operation as as described in the IPS Guidance'
     id :ips_docref_operation_group
     run_as_group
 

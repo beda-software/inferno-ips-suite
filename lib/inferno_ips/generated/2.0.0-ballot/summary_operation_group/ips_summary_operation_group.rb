@@ -41,7 +41,7 @@ require_relative 'ips_inferno_ips_patient_story_section_composition_section_test
 module IPSTestKit
   class SummaryOperationGroup < Inferno::TestGroup
     title '$summary Operation Tests'
-    description 'Verify support for the $summary operation as as described in the AU PS Guidance'
+    description 'Verify support for the $summary operation as as described in the IPS Guidance'
     id :ips_summary_operation
     run_as_group
 

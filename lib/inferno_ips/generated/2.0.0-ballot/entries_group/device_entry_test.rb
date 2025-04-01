@@ -14,6 +14,11 @@ module IPSTestKit
 
     run do
       initial_bundle = resource
+
+      initial_bundle.entry.map(&:resource).select do |r|
+        r.resourceType == 'Device'
+      end
+
       existing_resources = initial_bundle.entry.map(&:resource).select do |r|
         r.resourceType == 'Device' && r.meta&.profile&.include?('')
       end
@@ -21,7 +26,7 @@ module IPSTestKit
       skip_if existing_resources.empty?, "No existing resources of type 'Device' with profile '' found."
 
       existing_resources.each do |r|
-        assert_valid_resource(resource: r, profile_url: '')
+        assert_valid_resource(resource: r)
       end
     end
   end

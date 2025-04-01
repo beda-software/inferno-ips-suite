@@ -12,6 +12,11 @@ module IPSTestKit
 
     run do
       initial_bundle = resource
+
+      initial_bundle.entry.map(&:resource).select do |r|
+        r.resourceType == 'Patient' && r.meta&.profile&.include?('http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips')
+      end
+
       existing_resources = initial_bundle.entry.map(&:resource).select do |r|
         r.resourceType == 'Patient' && r.meta&.profile&.include?('http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips')
       end

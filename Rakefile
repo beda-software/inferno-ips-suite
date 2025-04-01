@@ -38,7 +38,7 @@ namespace :ips do
           docref_op: 'http://hl7.org/fhir/uv/ipa/OperationDefinition/docref',
           summary_op: 'http://hl7.org/fhir/uv/ips/OperationDefinition/summary',
           ps_bundle: 'http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips',
-          ps_composition: 'http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-bundle'
+          ps_composition: 'http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips'
         }
       }
     )
